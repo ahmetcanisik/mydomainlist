@@ -11,6 +11,13 @@ class OptionMenuBox(ctk.CTkFrame):
         super().__init__(master, fg_color="transparent")
         self.grid_columnconfigure((0, 1), weight=1)
         self.grid_columnconfigure((0, 1), weight=1)
+        self.category_list = data["category_list"]
+
+        new_category_list = []
+        for category in self.category_list:
+            new_category_list.append(category.replace('_', ' '))
+
+        self.category_list = new_category_list
 
         initial = ctk.StringVar(value=data["selected_category"].replace("_", ' '))
         label_font = ctk.CTkFont(size=14, weight="bold")
@@ -18,7 +25,7 @@ class OptionMenuBox(ctk.CTkFrame):
         self.label = ctk.CTkLabel(self, text="Category", font=label_font)
         self.label.grid(row=0, column=0, sticky="nsew")
 
-        self.combobox = ctk.CTkComboBox(self, values=data["category_list"], variable=initial, width=200, height=50, fg_color=data["colors"]["entry"], text_color=data["colors"]["entry_text"], border_color=data["colors"]["entry_border_color"], corner_radius=4,  command=self.combobox_onchange)
+        self.combobox = ctk.CTkComboBox(self, values=self.category_list, variable=initial, width=200, height=50, fg_color=data["colors"]["entry"], text_color=data["colors"]["entry_text"], border_color=data["colors"]["entry_border_color"], corner_radius=4,  command=self.combobox_onchange)
         self.combobox.grid(row=0, column=1, padx=10, pady=10, sticky="nsew")
 
     def combobox_onchange(self, category):

@@ -1,14 +1,12 @@
 {
-    "mylist": [
+    "my_list": [
         {
             "Domain": "example.com",
-            "Description": "This domain is for use in illustrative examples in documents. You may use this domain in literature without prior coordination or asking for permission."
-        }
-    ],
-    "without_category": [
+            "Description": "Domain name that is free to use in projects."
+        },
         {
-            "Domain": "testdomainaddress1093.xyz",
-            "Description": "this is a my test domain address"
+            "Domain": "test-domain-address.xyz",
+            "Description": "this is the test domain address for this project."
         }
     ]
 }

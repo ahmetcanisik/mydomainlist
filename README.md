@@ -1,7 +1,7 @@
 # My Domains List
 
 > [!NOTE]  
-> ⌚ The activity status of domain names was last checked on: `2024-07-07 14:02`   
+> ⌚ The activity status of domain names was last checked on: `2024-07-07 14:26`   
 > ❌ Purchased Domains : `1`    
 > ✅ Available Domains : `1`
 
@@ -10,16 +10,12 @@
 
 ## Categories
 
-- [Mylist](#mylist)
-- [Without Category](#without-category)
-## Mylist
+- [My List](#my-list)
+## My List
 | Domain Name | Description | Status |
 |-------------|-------------|--------|
-| <a href="https://whois.com/whois/example.com" target="_blank">example.com</a> | This domain is for use in illustrative examples in documents. You may use this domain in literature without prior coordination or asking for permission. | ❌ purchased |
-## Without Category
-| Domain Name | Description | Status |
-|-------------|-------------|--------|
-| <a href="https://whois.com/whois/testdomainaddress1093.xyz" target="_blank">testdomainaddress1093.xyz</a> | this is a my test domain address | ✅ available |
+| <a href="https://whois.com/whois/test-domain-address.xyz" target="_blank">test-domain-address.xyz</a> | this is the test domain address for this project. | ✅ available |
+| <a href="https://whois.com/whois/example.com" target="_blank">example.com</a> | Domain name that is free to use in projects. | ❌ purchased |
 
 
 LICENSE: [MIT](LICENSE)
