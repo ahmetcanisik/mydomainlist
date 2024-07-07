@@ -1,8 +1,0 @@
-{
-  "name": "mydomainlist",
-  "version": "0.0.1",
-  "description": "A desktop gui program to create your own domain list.",
-  "repository": "https://github.com/ahmetcanisik/mydomainlist.git",
-  "author": "ahmetcanisik <can.isik.business@gmail.com> (https://ahmetcanisik.com)",
-  "license": "MIT"
-}
