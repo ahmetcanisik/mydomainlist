@@ -1,0 +1,14 @@
+{
+    "my_list": [
+        {
+            "Domain": "example.com",
+            "Description": "Domain name that is free to use in projects."
+        }
+    ],
+    "without_category": [
+        {
+            "Domain": "star-this-project-please.com",
+            "Description": "I would be very happy if you star this project."
+        }
+    ]
+}
