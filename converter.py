@@ -64,10 +64,10 @@ def ConvertMarkdown(domains_path, title, version,readme, domain_check):
     date = datetime.now().strftime("%Y-%m-%d %H:%M")
     final_version = f"# {title}\n\n"
     final_version += f"""> [!NOTE]  
-> 👣 Version : `{version}`
 > ⌚ The activity status of domain names was last checked on: `{date}`   
 > ❌ Purchased Domains : `{stat["purchased"]}`    
-> ✅ Available Domains : `{stat["available"]}`\n\n"""
+> ✅ Available Domains : `{stat["available"]}`
+> 👣 App Version : `{version}`  \n\n"""
     final_version += f"""> [!TIP]  
 > You can check out the notes for future releases [here](notes.md).\n\n"""
     final_version += f"## Categories\n\n"
