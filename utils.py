@@ -53,8 +53,8 @@ data = {
     "selected_category": "without_category",
     "last_added": [],
     "entrys": {
-        "domain": "yuputer.com",
-        "description": "for youtubers..."
+        "domain": "example.com",
+        "description": "Domain name that is free to use in projects."
     }
 }
 
