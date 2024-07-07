@@ -1,0 +1,2 @@
+> [!NOTE] v0.0.1
+> - ✅ `utils.py, frames.py` :  When the program opens, the initial selection of categories will be changed and set to select category. If the user does not make any selection and clicks on the add or push buttons, then he will be asked to make a selection with an error message.

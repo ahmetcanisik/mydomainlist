@@ -1,0 +1,14 @@
+{
+    "mylist": [
+        {
+            "Domain": "example.com",
+            "Description": "This domain is for use in illustrative examples in documents. You may use this domain in literature without prior coordination or asking for permission."
+        }
+    ],
+    "without_category": [
+        {
+            "Domain": "testdomainaddress1093.xyz",
+            "Description": "this is a my test domain address"
+        }
+    ]
+}
