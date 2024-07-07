@@ -57,7 +57,7 @@ def ConvertMarkdown(domains_path, title, readme, domain_check):
             for domain in domains:
                 markdown += f"| <a href=\"https://whois.com/whois/{domain['Domain']}\" target=\"_blank\">{domain['Domain']}</a> | {domain['Description']}\n"
     
-    markdown += "<br /><br />"
+    markdown += "\n<br /><br />\n"
     markdown += "\n\nLICENSE: [MIT](LICENSE)"
     
     
@@ -69,13 +69,13 @@ def ConvertMarkdown(domains_path, title, readme, domain_check):
 > ✅ Available Domains : `{stat["available"]}`\n\n"""
     final_version += f"""> [!TIP]  
 > You can check out the notes for future releases [here](notes.md).\n\n"""
-    final_version += "<br /><br />"
+    final_version += "<br />"
     final_version += f"\n## Categories\n\n"
     for cat in domain_list.keys():
         link = cat.lower().replace('_', '-')
         final_version += f"- [{cat.title().replace('_', ' ')}](#{link})\n"
     
-    final_version += "<br /><br />"
+    final_version += "<br /><br />\n"
     final_version += markdown
     with open(readme, 'w', encoding="utf-8") as file:
         file.write(final_version)
