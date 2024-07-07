@@ -69,7 +69,6 @@ def ConvertMarkdown(domains_path, title, readme, domain_check):
 > ✅ Available Domains : `{stat["available"]}`\n\n"""
     final_version += f"""> [!TIP]  
 > You can check out the notes for future releases [here](notes.md).\n\n"""
-    final_version += "<br />\n"
     final_version += f"## Categories\n\n"
     for cat in domain_list.keys():
         link = cat.lower().replace('_', '-')
