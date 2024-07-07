@@ -1,14 +1,13 @@
 # My Domain List
 
 > [!NOTE]  
-> ⌚ The activity status of domain names was last checked on: `2024-07-07 14:41`   
+> ⌚ The activity status of domain names was last checked on: `2024-07-07 15:12`   
 > ❌ Purchased Domains : `1`    
 > ✅ Available Domains : `1`
 
 > [!TIP]  
 > You can check out the notes for future releases [here](notes.md).
 
-<br />
 ## Categories
 
 - [My List](#my-list)
@@ -21,7 +20,7 @@
 ## Without Category
 | Domain Name | Description | Status |
 |-------------|-------------|--------|
-| <a href="https://whois.com/whois/star-this-project-please.com" target="_blank">star-this-project-please.com</a> | star this project please | ✅ available |
+| <a href="https://whois.com/whois/star-this-project.me" target="_blank">star-this-project.me</a> | I would be very happy if you star this project. | ✅ available |
 
 <br /><br />
 
