@@ -1,10 +1,10 @@
 # My Domain List
 
 > [!NOTE]  
-> ⌚ The activity status of domain names was last checked on: `2024-07-07 15:27`   
-> ❌ Purchased Domains : `1`    
-> ✅ Available Domains : `1`
-> 👣 App Version : `0.0.1`  
+> ⌚ The activity status of domain names was last checked on: `2024-07-07 15:32`   
+> ❌ Purchased Domains : `1`      
+> ✅ Available Domains : `1`      
+> 👣 App Version : `0.0.1`
 
 > [!TIP]  
 > You can check out the notes for future releases [here](notes.md).
@@ -21,7 +21,7 @@
 ## Without Category
 | Domain Name | Description | Status |
 |-------------|-------------|--------|
-| <a href="https://whois.com/whois/star-this-project.org" target="_blank">star-this-project.org</a> | Bu projeye star vermeniz beni motive edecektir. | ✅ available |
+| <a href="https://whois.com/whois/star-this-project.me" target="_blank">star-this-project.me</a> | Your star rating for this project will motivate me. | ✅ available |
 
 <br /><br />
 
