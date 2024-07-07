@@ -67,11 +67,11 @@ def ConvertMarkdown(domains_path, title, readme, domain_check):
 > ❌ Purchased Domains : `{stat["purchased"]}`    
 > ✅ Available Domains : `{stat["available"]}`\n\n"""
     final_version += f"""> [!TIP]  
-> You can check out the notes for future releases [here](notes.md).\n\n"""
+> You can check out the notes for future releases [here](notes.md).\n\n<br>"""
     final_version += f"## Categories\n\n"
     for cat in domain_list.keys():
         link = cat.lower().replace('_', '-')
         final_version += f"- [{cat.title().replace('_', ' ')}](#{link})\n"
-    final_version += markdown
+    final_version += "<br>\n" + markdown + "<br>\n"
     with open(readme, 'w', encoding="utf-8") as file:
         file.write(final_version)
