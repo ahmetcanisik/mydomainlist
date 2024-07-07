@@ -9,10 +9,6 @@
         {
             "Domain": "test-domain-address.xyz",
             "Description": "this is the test domain address for this project."
-        },
-        {
-            "Domain": "test-domain-address.dev",
-            "Description": "this is the test domain address for this project."
         }
     ]
 }
