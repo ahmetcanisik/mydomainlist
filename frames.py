@@ -147,7 +147,7 @@ class ButtonBox(ctk.CTkFrame):
 
         log(type="info", message="Converting domains...")
 
-        ConvertMarkdown(domains_path=data["location"]["json"], title="My Domains List", readme=data["location"]["readme"], domain_check="True")
+        ConvertMarkdown(domains_path=data["location"]["json"], title="My Domain List", readme=data["location"]["readme"], domain_check="True")
 
         log(type="good", message=f"Successfully Converted Domains to Markdown Table... {data['location']['readme']}")
 

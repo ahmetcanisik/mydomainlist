@@ -1,7 +1,7 @@
-# My Domains List
+# My Domain List
 
 > [!NOTE]  
-> ⌚ The activity status of domain names was last checked on: `2024-07-07 14:38`   
+> ⌚ The activity status of domain names was last checked on: `2024-07-07 14:41`   
 > ❌ Purchased Domains : `1`    
 > ✅ Available Domains : `1`
 
@@ -21,7 +21,7 @@
 ## Without Category
 | Domain Name | Description | Status |
 |-------------|-------------|--------|
-| <a href="https://whois.com/whois/test-domain-address.xyz" target="_blank">test-domain-address.xyz</a> | this is the test domain address for this project. | ✅ available |
+| <a href="https://whois.com/whois/star-this-project-please.com" target="_blank">star-this-project-please.com</a> | star this project please | ✅ available |
 
 <br /><br />
 
