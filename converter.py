@@ -32,7 +32,7 @@ def check_domain(domain):
     return domain['Domain'], domain['Description'], status
 
 
-def ConvertMarkdown(domains_path, title, readme, domain_check):
+def ConvertMarkdown(domains_path, title, version,readme, domain_check):
     with open(domains_path, "r", encoding="utf-8") as domains_file:
         domain_list = json.load(domains_file)
 
@@ -64,6 +64,7 @@ def ConvertMarkdown(domains_path, title, readme, domain_check):
     date = datetime.now().strftime("%Y-%m-%d %H:%M")
     final_version = f"# {title}\n\n"
     final_version += f"""> [!NOTE]  
+> 👣 Version : `{version}`
 > ⌚ The activity status of domain names was last checked on: `{date}`   
 > ❌ Purchased Domains : `{stat["purchased"]}`    
 > ✅ Available Domains : `{stat["available"]}`\n\n"""

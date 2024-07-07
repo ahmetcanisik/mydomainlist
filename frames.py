@@ -66,7 +66,7 @@ class Header(ctk.CTkFrame):
         icon_settings = ctk.CTkImage(light_image=Image.open(data["img"]["settings"][0]),
                                      dark_image=Image.open(data["img"]["settings"][1]), size=(24, 24))
 
-        self.title = ctk.CTkLabel(self, text="My Domain List", text_color=data["colors"]["header_title"], font=s12_b)
+        self.title = ctk.CTkLabel(self, text=f"{data["name"]} @{data["version"]}", text_color=data["colors"]["header_title"], font=s12_b)
         self.title.grid(row=0, column=0, padx=10, pady=10, sticky="nw")
 
         self.settings_button = ctk.CTkButton(self, image=icon_settings, text="", fg_color="transparent", width=24, command=self.settings_button_clicked)
@@ -147,7 +147,7 @@ class ButtonBox(ctk.CTkFrame):
 
         log(type="info", message="Converting domains...")
 
-        ConvertMarkdown(domains_path=data["location"]["json"], title="My Domain List", readme=data["location"]["readme"], domain_check="True")
+        ConvertMarkdown(domains_path=data["location"]["json"], title=data["name"], version=data["version"], readme=data["location"]["readme"], domain_check="True")
 
         log(type="good", message=f"Successfully Converted Domains to Markdown Table... {data['location']['readme']}")
 

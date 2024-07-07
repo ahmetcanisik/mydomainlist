@@ -16,6 +16,13 @@ class terminal_color:
     UNDERLINE = '\033[4m'
 
 data = {
+    "name": "My Domain List",
+    "version": "0.0.1",
+    "description": "A desktop gui program to create your own domain list.",
+    "main": "app.py",
+    "repository": "https://github.com/ahmetcanisik/mydomainlist.git",
+    "author": "ahmetcanisik <can.isik.business@gmail.com> (https://ahmetcanisik.com)",
+    "license": "MIT",
     "preferences": {
         "theme": "system",
         "lang": "English"
