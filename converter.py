@@ -63,6 +63,7 @@ def ConvertMarkdown(domains_path, title, version,readme, domain_check):
     
     date = datetime.now().strftime("%Y-%m-%d %H:%M")
     final_version = f"# {title}\n\n"
+    final_version += "<img src='./screenshot.png' width='630' height='331' alt='mydomainlist screenshot' />\n\n"
     final_version += f"""> [!NOTE]  
 > ⌚ The activity status of domain names was last checked on: `{date}`   
 > ❌ Purchased Domains : `{stat["purchased"]}`      

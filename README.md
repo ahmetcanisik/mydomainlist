@@ -1,7 +1,9 @@
 # My Domain List
 
+<img src='./screenshot.png' width='630' height='331' alt='mydomainlist screenshot' />
+
 > [!NOTE]  
-> ⌚ The activity status of domain names was last checked on: `2024-07-07 15:32`   
+> ⌚ The activity status of domain names was last checked on: `2024-07-08 12:18`   
 > ❌ Purchased Domains : `1`      
 > ✅ Available Domains : `1`      
 > 👣 App Version : `0.0.1`
