@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import whois
 import json
-from utils import log
+from .utils import log
 from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor, as_completed
 

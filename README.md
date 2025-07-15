@@ -3,9 +3,9 @@
 <img src='./screenshot.png' width='630' height='331' alt='mydomainlist screenshot' />
 
 > [!NOTE]  
-> ⌚ The activity status of domain names was last checked on: `2024-07-08 12:18`   
+> ⌚ The activity status of domain names was last checked on: `2025-07-15 11:53`   
 > ❌ Purchased Domains : `1`      
-> ✅ Available Domains : `1`      
+> ✅ Available Domains : `2`      
 > 👣 App Version : `0.0.1`
 
 > [!TIP]  
@@ -23,6 +23,7 @@
 ## Without Category
 | Domain Name | Description | Status |
 |-------------|-------------|--------|
+| <a href="https://whois.com/whois/dopushup.com" target="_blank">dopushup.com</a> | Doing push ups for theuselessweb project | ✅ available |
 | <a href="https://whois.com/whois/star-this-project.me" target="_blank">star-this-project.me</a> | Your star rating for this project will motivate me. | ✅ available |
 
 <br /><br />

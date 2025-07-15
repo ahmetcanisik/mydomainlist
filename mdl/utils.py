@@ -2,18 +2,12 @@
 import os
 import json
 import subprocess
-from messagebox import MessageBox
+from .messagebox import MessageBox
 from datetime import datetime
-class terminal_color:
-    HEADER = '\033[95m'
-    OKBLUE = '\033[94m'
-    OKCYAN = '\033[96m'
-    OKGREEN = '\033[92m'
-    WARNING = '\033[93m'
-    FAIL = '\033[91m'
-    ENDC = '\033[0m'
-    BOLD = '\033[1m'
-    UNDERLINE = '\033[4m'
+from rich.console import Console
+from rich.text import Text
+
+console = Console()
 
 data = {
     "name": "My Domain List",
@@ -59,26 +53,32 @@ data = {
 }
 
 def log(type="info", message="your log is here!"):
-    state = ""
+    now = datetime.now()
     if type == "info":
-        state = f"{terminal_color.OKBLUE}[   INFO   ]{terminal_color.ENDC}"
+        state = "[bold blue][   INFO   ][/bold blue]"
     elif type == "warn":
-        state = f"{terminal_color.WARNING}[   WARN   ]{terminal_color.ENDC}"
+        state = "[bold yellow][   WARN   ][/bold yellow]"
     elif type == "err":
-        state = f"{terminal_color.FAIL}[   ERR    ]{terminal_color.ENDC}"
+        state = "[bold red][   ERR    ][/bold red]"
     elif type == "good":
-        state = f"{terminal_color.OKGREEN}[   GOOD   ]{terminal_color.ENDC}"
+        state = "[bold green][   GOOD   ][/bold green]"
+    else:
+        state = "[bold][   LOG    ][/bold]"
 
-    result = f"{terminal_color.HEADER}[    {datetime.now()}    ]{terminal_color.ENDC} {state} {terminal_color.OKCYAN}{message}{terminal_color.ENDC}"
-    print(result)
+    timestamp = f"[magenta][    {now}    ][/magenta]"
+    msg = f"{timestamp} {state} [cyan]{message}[/cyan]"
+    console.print(msg)
 
     appdata_path = os.getenv('APPDATA')
-    log_file_path = os.path.join(appdata_path, 'mydomainslist', 'log.txt')
-
+    if not appdata_path:
+        # Fallback for non-Windows systems
+        appdata_path = os.path.expanduser('~/.mydomainslist')
+        log_file_path = os.path.join(appdata_path, 'log.txt')
+    else:
+        log_file_path = os.path.join(appdata_path, 'mydomainslist', 'log.txt')
     os.makedirs(os.path.dirname(log_file_path), exist_ok=True)
-
     with open(log_file_path, 'a', encoding="utf-8") as log_file:
-        log_file.write('\n' + result + '\n')
+        log_file.write('\n' + f"{now} {type.upper()} {message}" + '\n')
 
 def get_domains(file_path):
     if not os.path.exists(file_path):
@@ -86,9 +86,9 @@ def get_domains(file_path):
     else:
         with open(file_path, "r", encoding="utf-8") as file:
             try:
-                log(type="info", message=f"openning... {terminal_color.BOLD}{file_path}{terminal_color.ENDC}")
+                log(type="info", message=f"openning... [bold]{file_path}[/bold]")
                 data["domains"].append(json.load(file))
-                log(type="good", message=f"{terminal_color.BOLD}{file_path}{terminal_color.ENDC}{terminal_color.OKCYAN} successfully readed")
+                log(type="good", message=f"[bold]{file_path}[/bold] [cyan]successfully readed[/cyan]")
                 data["category_list"] = list(data["domains"][0].keys())
                 log(type="good", message="category list was updated")
             except json.JSONDecodeError as e:
@@ -101,15 +101,15 @@ def set_domains(domains_list, file_path):
     try:
         with open(file_path, "w", encoding="utf-8") as file:
             json.dump(domains_list, file, ensure_ascii=False, indent=4)
-            log(type="good", message=f"successfully written to {file_path}")
+            log(type="good", message=f"successfully written to [bold]{file_path}[/bold]")
     except Exception as e:
-        log(type="err", message=f"ups! something went wrong {e}")
+        log(type="err", message=f"ups! something went wrong [red]{e}[/red]")
 
 def add_github(message="new domain was added", branch="main"):
     try:
         subprocess.run(["git", "checkout", "-b", branch], check=True)
     except subprocess.CalledProcessError as e:
-        log(type="err", message=f"Branch creation or migration failed: {e}")
+        log(type="err", message=f"Branch creation or migration failed: [red]{e}[/red]")
 
     try:
         subprocess.run(["git", "branch", "-M", branch], check=True)

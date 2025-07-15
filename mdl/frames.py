@@ -1,9 +1,9 @@
-from openFileDialog import FileDialogBox
+from .openFileDialog import FileDialogBox
 from PIL import Image
 import customtkinter as ctk
-from converter import ConvertMarkdown
+from .converter import ConvertMarkdown
 from CTkToolTip import CTkToolTip
-from utils import *
+from .utils import *
 
 
 class OptionMenuBox(ctk.CTkFrame):
@@ -140,7 +140,7 @@ class ButtonBox(ctk.CTkFrame):
             "Description": description
         })
 
-        info = f'Updated domain list: {data["selected_category"]}: {data["domains"][0][data["selected_category"]][:-1]}, {terminal_color.HEADER}{data["domains"][0][data["selected_category"]][-1]}{terminal_color.ENDC}'
+        info = f'Updated domain list: {data["selected_category"]}: {data["domains"][0][data["selected_category"]][:-1]}, [magenta]{data["domains"][0][data["selected_category"]][-1]}[/magenta]'
         set_domains(data["domains"][0], data["location"]["json"])
 
         log(type="info", message=info)

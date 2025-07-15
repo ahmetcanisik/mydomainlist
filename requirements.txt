@@ -2,3 +2,5 @@ pillow
 customtkinter
 CTkMessagebox
 python-whois
+CTkToolTip
+rich

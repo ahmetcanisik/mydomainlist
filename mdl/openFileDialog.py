@@ -2,7 +2,7 @@
 import customtkinter as ctk
 from customtkinter import filedialog
 from PIL import Image
-from utils import data, get_domains
+from .utils import data, get_domains
 class OpenFileDialogBox(ctk.CTkFrame):
     def __init__(self, master, mainframe, placeholder, name):
         super().__init__(master, fg_color="transparent")
